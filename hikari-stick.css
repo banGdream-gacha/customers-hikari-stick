@@ -1,0 +1,239 @@
+html, body {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.customers {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 100;
+}
+.customers .customers-main {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    perspective: 800px;
+}
+.customers .customers-template {
+    display: none !important;
+}
+.customers .level {
+    position: absolute;
+    left: 50%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    transform-style: preserve-3d;
+}
+.customers .level .stick {
+    flex: 1;
+    height: 100%;
+    width: auto;
+}
+.customers .level .stick:nth-child(n) {
+    transform: translateY(0);
+}
+.customers .level .stick:nth-child(5n+1) {
+    transform: translateY(2px);
+}
+.customers .level .stick:nth-child(5n+3) {
+    transform: translateY(3px);
+}
+.customers .level .stick:nth-child(5n+4) {
+    transform: translateY(4px);
+}
+.customers .level .stick:nth-child(7n+4) {
+    transform: translateY(-2px);
+}
+.customers .level .stick:nth-child(7n+5) {
+    transform: translateY(-3px);
+}
+.customers .level .stick:nth-child(7n+6) {
+    transform: translateY(-4px);
+}
+.customers .level.l0 .stick .stick-body {
+    animation: swing .25s linear infinite;
+}
+.customers .level.l1 .stick .stick-body {
+    animation: swing .25s linear infinite reverse;
+}
+.stick .stick-body {
+    position: absolute;
+    transform-origin: bottom;
+    height: 40px;
+    width: 8px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-radius: 8px 8px 2px 2px;
+    animation-fill-mode: both !important;
+    &.white {
+        background: #ccc;
+        box-shadow: -2px -2px 5px #fff8,
+                    2px -2px 5px #fff8,
+                    -2px -2px 20px #ccc,
+                    2px -2px 20px #ccc;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #fff 0, #ccc 100%);
+        }
+    }
+    &.yellow {
+        background: #dd9;
+        box-shadow: -2px -2px 5px #ffd8,
+                    2px -2px 5px #ffd8,
+                    -2px -2px 20px #dd9,
+                    2px -2px 20px #dd9;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #ffd 0, #dd9 100%);
+        }
+    }
+    &.red {
+        background: #caa;
+        box-shadow: -2px -2px 5px #fee8,
+                    2px -2px 5px #fee8,
+                    -2px -2px 20px #caa,
+                    2px -2px 20px #caa;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #fee 0, #caa 100%);
+        }
+    }
+    &.green {
+        background: #aca;
+        box-shadow: -2px -2px 5px #efe8,
+                    2px -2px 5px #efe8,
+                    -2px -2px 20px #aca,
+                    2px -2px 20px #aca;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #efe 0, #aca 100%);
+        }
+    }
+    &.blue {
+        background: #99c;
+        box-shadow: -2px -2px 5px #eef8,
+                    2px -2px 5px #eef8,
+                    -2px -2px 20px #99c,
+                    2px -2px 20px #99c;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #eef 0, #99c 100%);
+        }
+    }
+    &.aqua {
+        background: #9cc;
+        box-shadow: -2px -2px 5px #dff8,
+                    2px -2px 5px #dff8,
+                    -2px -2px 20px #9cc,
+                    2px -2px 20px #9cc;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #dff 0, #9cc 100%);
+        }
+    }
+    &.plum {
+        background: #cac;
+        box-shadow: -2px -2px 5px #fef8,
+                    2px -2px 5px #fef8,
+                    -2px -2px 20px #cac,
+                    2px -2px 20px #cac;
+        .illuminant {
+            background: radial-gradient(ellipse at bottom, #fef 0, #cac 100%);
+        }
+    }
+    &.star5 {
+        border-radius: 8px;
+        &.white {
+            background: #fff;
+            box-shadow: -1px -1px 5px #fd9,
+                        1px -1px 5px #fd9,
+                        1px 1px 5px #fd9,
+                        -1px 1px 5px #fd9,
+                        -4px -4px 10px #f70,
+                        4px -4px 10px #f70,
+                        4px 4px 10px #f70,
+                        -4px 4px 10px #f70;
+        }
+        &.yellow {
+            background: #fe5;
+            box-shadow: -1px -1px 5px #ff6,
+                        1px -1px 5px #ff6,
+                        1px 1px 5px #ff6,
+                        -1px 1px 5px #ff6,
+                        -4px -4px 10px #f90,
+                        4px -4px 10px #f90,
+                        4px 4px 10px #f90,
+                        -4px 4px 10px #f90;
+        }
+        &.red {
+            background: #fb4;
+            box-shadow: -1px -1px 5px #fc5,
+                        1px -1px 5px #fc5,
+                        1px 1px 5px #fc5,
+                        -1px 1px 5px #fc5,
+                        -4px -4px 10px #f70,
+                        4px -4px 10px #f70,
+                        4px 4px 10px #f70,
+                        -4px 4px 10px #f70;
+        }
+        &.green {
+            background: #fff;
+            box-shadow: -1px -1px 5px #eea,
+                        1px -1px 5px #eea,
+                        1px 1px 5px #eea,
+                        -1px 1px 5px #eea,
+                        -4px -4px 10px #cc4,
+                        4px -4px 10px #cc4,
+                        4px 4px 10px #cc4,
+                        -4px 4px 10px #cc4;
+        }
+        &.blue {
+            background: #fff;
+            box-shadow: -1px -1px 5px #daf,
+                        1px -1px 5px #daf,
+                        1px 1px 5px #daf,
+                        -1px 1px 5px #daf,
+                        -4px -4px 10px #95f,
+                        4px -4px 10px #95f,
+                        4px 4px 10px #95f,
+                        -4px 4px 10px #95f;
+        }
+        &.plum {
+            background: #fff;
+            box-shadow: -1px -1px 5px #fcc,
+                        1px -1px 5px #fcc,
+                        1px 1px 5px #fcc,
+                        -1px 1px 5px #fcc,
+                        -4px -4px 10px #f77,
+                        4px -4px 10px #f77,
+                        4px 4px 10px #f77,
+                        -4px 4px 10px #f77;
+        }
+        .illuminant {
+            background: #fff0;
+        }
+    }
+}
+.stick .stick-body .illuminant {
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+}
+@keyframes swing {
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+    50%, 100% { 
+        transform: rotate(0deg);
+    }
+}
