@@ -4,20 +4,20 @@
 ### 💡 How to use?
 仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后将 [index.html](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/index.html) 中body元素下的全部内容复制到您的HTML文档的body元素下，即可开始使用！<br>
 #### 一些函数的使用
-<b>function: createCustomers()</b>
+<b>function: createCustomers()</b><br>
 用于创建荧光棒摇晃动画
 
 | 必须参数 | 类型 | 描述 |
 | --- | --- | --- |
 | rank | Number | BanG Dream游戏角色的星级 |
 
-<b>function: removeCustomers()</b>
+<b>function: removeCustomers()</b><br>
 用于移除荧光棒摇晃动画
 
-<b>function: pauseCustomers()</b>
+<b>function: pauseCustomers()</b><br>
 用于暂停播放荧光棒摇晃动画
 
-<b>function: continueCustomers()</b>
+<b>function: continueCustomers()</b><br>
 用于继续播放荧光棒摇晃动画
 
 ### 📄 License
