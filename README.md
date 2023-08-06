@@ -4,20 +4,20 @@
 ### 💡 How to use?
 仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后在HTML文档中添加以下内容：
 
-```
+```HTML
 <div class="customers"></div>
 ```
 即可开始使用！
 #### 🛠️ How to use the function?
 <b>首先，您需要实例化HikariStick类，像下面这样：</b>
 
-```
+```JavaScript
 let HS = new HikariStick();
 ```
 注意：在实例化类时，您可以传入一个布尔值，当其为“true”时，会在每次创建四星/五星时改变之前的颜色排序。<br><br>
 <b>之后，您可以通过下面的方式调用方法：</b>
 
-```
+```JavaScript
 HS.functionName();
 ```
 <b>以下是可以调用的方法及相关说明：</b><br><br>
