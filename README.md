@@ -2,12 +2,22 @@
 一个简易创建荧光棒摇晃动画的项目，是仿制的BanG Dream抽卡动画的一部分，使用原生JS<br>
 <b>P.S.如您需完整体验BanG Dream抽卡模拟器，请访问 [这里](https://bangdream-gacha.animedb.cn/)</b>
 ### 💡 How to use?
-仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后在您的HTML文档中添加以下代码：
+仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后在HTML文档中添加以下内容：
 ```
-<div class="customers"></div
+<div class="customers"></div>
 ```
 即可开始使用！
-#### 一些函数的使用
+#### 🛠️ How to use the function?
+<b>首先，您需要实例化HikariStick类，像下面这样：<b>
+```
+let HS = new HikariStick();
+```
+注意：在实例化类时，您可以传入一个布尔值，当其为“true”时，会在每次创建四星/五星时改变之前的颜色排序。<br>
+<b>之后，您可以通过下面的方式调用方法：<b>
+```
+HS.functionName();
+```
+<b>以下是可以调用的方法及相关说明：</b>
 <b>function: createCustomers()</b><br>
 用于创建荧光棒摇晃动画
 
