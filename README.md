@@ -20,7 +20,7 @@ let HS = new HikariStick();
 ```
 HS.functionName();
 ```
-<b>以下是可以调用的方法及相关说明：</b>
+<b>以下是可以调用的方法及相关说明：</b><br>
 <b>function: createCustomers()</b><br>
 用于创建荧光棒摇晃动画
 
