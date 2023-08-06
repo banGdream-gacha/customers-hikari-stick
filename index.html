@@ -4,18 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一个简单的例子</title>
     <link rel="stylesheet" type="text/css" href="./hikari-stick.css">
+    <script src="./hikari-stick.js"></script>
+    <script>let HS = new HikariStick(true);</script>
+    <style>
+        button {
+            width: 8rem;
+            height: 2rem;
+            border: none;
+            border-radius: 2rem !important;
+            background: #6cf;
+            color: #fff;
+            margin: .5rem;
+        }
+    </style>
 </head>
 <body>
+    <div>
+        <button onclick="HS.createCustomers(2);">创建2星荧光棒</button>
+        <button onclick="HS.createCustomers(3);">创建3星荧光棒</button>
+        <button onclick="HS.createCustomers(4);">创建4星荧光棒</button>
+        <button onclick="HS.createCustomers(5);">创建5星荧光棒</button>
+        <button onclick="HS.pauseCustomers();">暂停荧光棒动画</button>
+        <button onclick="HS.continueCustomers();">继续荧光棒动画</button>
+        <button onclick="HS.removeCustomers();">移除荧光棒</button>
+    </div>
     <div class="customers"></div>
 </body>
-<script src="./hikari-stick.js"></script>
-<script>
-    // 一些例子
-    let HS = new HikariStick(true);
-    HS.createCustomers(4);
-    HS.pauseCustomers();
-    HS.continueCustomers();
-    HS.removeCustomers();
-</script>
 </html>
