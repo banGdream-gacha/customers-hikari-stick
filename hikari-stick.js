@@ -4,7 +4,7 @@ class HikariStick {
 
     randomStorage = {};
 
-    constructor (changeColor=false) {
+    constructor(changeColor=false) {
         this.changeColor = changeColor ? true : false;
     }
 
