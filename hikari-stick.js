@@ -48,10 +48,10 @@ class HikariStick {
                             return ["yellow"];
                         case 4:
                             let star4Color = ["white", "yellow", "red", "green", "blue", "aqua", "plum"];
-                            return [star4Color[Math.floor(this.#theRandom((this.changeColor ? `i${i}j${j}s4c` : null)) * star4Color.length)]];
+                            return [star4Color[Math.floor(this.#theRandom((this.changeColor ? null : `i${i}j${j}s4c`)) * star4Color.length)]];
                         case 5:
                             let star5Color = ["white", "yellow", "red", "green", "blue", "plum"];
-                            return [star5Color[Math.floor(this.#theRandom((this.changeColor ? `i${i}j${j}s5c` : null)) * star5Color.length)], "star5"];
+                            return [star5Color[Math.floor(this.#theRandom((this.changeColor ? null : `i${i}j${j}s5c`)) * star5Color.length)], "star5"];
                         default:
                             throw "Error!";
                     }
