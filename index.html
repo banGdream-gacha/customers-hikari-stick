@@ -7,17 +7,15 @@
     <link rel="stylesheet" type="text/css" href="./hikari-stick.css">
 </head>
 <body>
-    <div class="customers">
-        <div class="customers-main"></div>
-        <div class="customers-template">
-            <div class="level"></div>
-            <div class="stick">
-                <div class="stick-body">
-                    <div class="illuminant"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="customers"></div>
 </body>
 <script src="./hikari-stick.js"></script>
+<script>
+    // 一些例子
+    let HS = new HikariStick(true);
+    HS.createCustomers(4);
+    HS.pauseCustomers();
+    HS.continueCustomers();
+    HS.removeCustomers();
+</script>
 </html>
