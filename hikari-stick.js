@@ -4,8 +4,8 @@ class HikariStick {
 
     randomStorage = {};
 
-    constructor (changeColor) {
-        this.changeColor = changeColor;
+    constructor (changeColor=false) {
+        this.changeColor = changeColor ? true : false;
     }
 
     // 用于寄存Random结果
