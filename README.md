@@ -2,7 +2,11 @@
 一个简易创建荧光棒摇晃动画的项目，是仿制的BanG Dream抽卡动画的一部分，使用原生JS<br>
 <b>P.S.如您需完整体验BanG Dream抽卡模拟器，请访问 [这里](https://bangdream-gacha.animedb.cn/)</b>
 ### 💡 How to use?
-仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后将 [index.html](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/index.html) 中body元素下的全部内容复制到您的HTML文档的body元素下，即可开始使用！<br>
+仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后在您的HTML文档中添加以下代码：
+```
+<div class="customers"></div
+```
+即可开始使用！
 #### 一些函数的使用
 <b>function: createCustomers()</b><br>
 用于创建荧光棒摇晃动画
