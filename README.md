@@ -1,5 +1,6 @@
 # customers-hikari-sticks
 一个简易创建荧光棒摇晃动画的项目，是仿制的BanG Dream抽卡动画的一部分，使用原生JS<br>
+您可以查看 [这里](https://bangdream-gacha.github.io/customers-hikari-stick/) 以测试荧光棒生成的效果
 <b>P.S.如您需完整体验BanG Dream抽卡模拟器，请访问 [这里](https://bangdream-gacha.animedb.cn/)</b>
 ### 💡 How to import?
 仅需要将 [hikari-sticks.css](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.css) 和 [hikari-sticks.js](https://github.com/banGdream-gacha/customers-hikari-sticks/blob/main/hikari-stick.js) 引入您需要添加荧光棒摇晃动画的HTML文档，然后在HTML文档中添加以下内容：
